@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.quiz-container {
+    background: #ffffff;
+    width: 650px; /* Quiz box width bara kar di gayi hai */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.quiz-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+.quiz-header h2 {
+    color: #333;
+    font-size: 22px;
+}
+
+#timerBox {
+    background: #fffae6;
+    color: #d97706;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#quizBox h3 {
+    color: #2d3748;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.option-label {
+    display: block;
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 15px;
+    color: #1e293b;
+}
+
+.option-label:hover {
+    background: #edf2f7;
+    border-color: #94a3b8;
+}
+
+.option-label input {
+    margin-right: 10px;
+}
+
+#nextBtn {
+    width: 100%;
+    background: #4f46e5;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background 0.3s ease;
+}
+
+#nextBtn:hover {
+    background: #4338ca;
+}
+
+#nextBtn:disabled {
+    background: #94a3b8;
+    cursor: not-allowed;
+}
+
+.result-box {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.result-box h2 {
+    color: #16a34a;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.result-box p {
+    font-size: 18px;
+    color: #334155;
+    margin: 8px 0;
+}
